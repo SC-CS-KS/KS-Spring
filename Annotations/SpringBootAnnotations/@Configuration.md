@@ -21,11 +21,11 @@ public @interface Configuration {
 }
 
 ```
-```md
+
 从Spring3.0，@Configuration 用于定义配置类，可替换xml配置文件，被注解的类内部包含有一个或多个被@Bean注解的方法，
 这些方法将会被 AnnotationConfigApplicationContext 或 AnnotationConfigWebApplicationContext 类进行扫描，
 并用于构建bean定义，初始化Spring容器。
-```
+
 ```md
 注意：@Configuration注解的配置类有如下要求：
 1. 不可以是final类型；
