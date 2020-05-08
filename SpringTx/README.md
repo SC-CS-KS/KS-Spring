@@ -1,4 +1,5 @@
-# Spring Transaction
+# Spring Transaction  
+
 Spring 事务管理分为编码式和声明式的两种方式。
 编程式事务指的是通过编码方式实现事务；声明式事务基于 AOP，将具体业务逻辑与事务处理解耦。
 

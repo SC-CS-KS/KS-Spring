@@ -50,6 +50,15 @@ Spring Boot继承了Spring的优点，并新增了一些新功能和特性：
 4. SpringBoot简化了使用Spring的过程；
 5. Spring Boot为我们带来了脚本语言开发的效率，但是Spring Boot并没有让我们意外的新技术，都是Java EE开发者常见的技术。
 
+# vs Spring
+
+传统Spring和SpringBoot在对待bean定义注册这一块，完全相同，没有任何区别。  
+SpringBoot采用根据条件（condition）自动配置的方式（AutoConfiguration）  
+
+从Spring到SpringBoot，非web应用使用的类没有变，web应用使用的类改变了，为啥呢？  
+传统Spring构建的web应用，会打成一个war包，放入tomcat下面。先启动tomcat，然后tomcat再去加载它下面的web应用（即war包）。  
+SpringBoot构建的web应用，会打成一个jar包，采用内嵌的tomcat。先启动jar包，会进入SpringBoot中，然后再去启动tomcat。  
+
 ## vs 微服务构建框架
 
 Spring Boot比较适合微服务部署方式。

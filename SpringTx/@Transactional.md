@@ -7,8 +7,10 @@
       <version>4.3.17.RELEASE</version>
     </dependency>
 ```
+
 第一步，在 xml 配置文件中添加事务配置信息。
-第二步，将@Transactional 注解添加到合适的方法上，并设置合适的属性信息。
+第二步，将@Transactional 注解添加到合适的方法上，并设置合适的属性信息。  
+
 ## 属性
 name	当在配置文件中有多个 TransactionManager , 可以用该属性指定选择哪个事务管理器。
 propagation	事务的传播行为，默认值为 REQUIRED。
